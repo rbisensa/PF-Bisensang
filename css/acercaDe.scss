@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: tomato;
+}
+
+.nav-link{
+    color: white !important;
+    padding-left: 20px !important;
+}
+
+.nav-link:hover{
+    transform: scale(1.15) !important;
+    background-color: red;
+    font-weight: bolder;
+    /* background-color: white; */
+    /* position: fixed; */
+}
+
+.jumbotron{
+    background-image: url(../img/niña\ con\ globo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;   
+}
+
+.barra a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-color: tomato;
+    padding: 20px;
+}
+
+footer .redes{
+margin-top: 20px;
+text-align: center;
+font-size: 40px;
+/* padding: 20px; */
+}
+
+footer a{
+    color: white;
+}
+
+::-webkit-scrollbar{
+    background-color:  tomato;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #333;
+}    

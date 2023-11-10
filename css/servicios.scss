@@ -5,7 +5,7 @@
 }
 
 .navbar{
-    background-color: springgreen;
+    background-color: tomato;
 }
 
 .nav-link{
@@ -15,7 +15,7 @@
 
 .nav-link:hover{
     transform: scale(1.15) !important;
-    background-color: rgba(11, 248, 11, 0.801);
+    background-color: red;
     font-weight: bolder;
 }
 
@@ -25,10 +25,16 @@
 
 body{
     background-color: #333;
+    background-image: linear-gradient(to left, white, orangered, tomato, white );
+}
+
+h3{
+    color: white;
+    font-family: cursive;
 }
 
 footer{
-    background-color: springgreen;
+    background-color: tomato;
     padding: 20px;
 }
 
@@ -44,7 +50,7 @@ footer a{
 }
 
 ::-webkit-scrollbar{
-    background-color:  springgreen;
+    background-color:  tomato;
 }
 
 ::-webkit-scrollbar-thumb{

@@ -5,7 +5,7 @@
 }
 
 .navbar{
-    background-color: springgreen;
+    background-color: tomato;
     /* margin-bottom: 0px; */
 }
 
@@ -16,7 +16,7 @@
 
 .nav-link:hover{
     transform: scale(1.15) !important;
-    background-color: rgba(11, 248, 11, 0.801);
+    background-color: red;
     font-weight: bolder;
 }
 
@@ -27,7 +27,7 @@ body{
 .container-fluid{
     color: white;
     width: 100%;
-    background-image: url(../imagenes2/niña\ globos.jpg);
+    background-image: url(../img/pinata-1937444_1280.jpg);
     background-size: cover;
     background-position: center;
     height: auto;
@@ -35,7 +35,7 @@ body{
 
 h3{
     text-transform: uppercase;
-    color: springgreen;
+    color: tomato;
     text-shadow: 1px 1px 4px #333,
     1px 1px 4px #333,
     1px 1px 4px #333;
@@ -45,7 +45,7 @@ h3{
 }
 
 .checked:checked{
-    accent-color: rgb(22, 249, 1);
+    accent-color: red;
     /* color: red; */
     /* background-color: #ff0; */
 }
@@ -55,7 +55,7 @@ margin-bottom: 20px;
 }
 
 .btn-primary:hover{
-background-color: rgba(11, 248, 11, 0.801) ; 
+background-color: red; 
 }
 
 .barra a{
@@ -64,7 +64,7 @@ background-color: rgba(11, 248, 11, 0.801) ;
 }
 
 footer{
-    background-color: springgreen;
+    background-color: tomato;
     padding: 20px;
 }
 
@@ -72,7 +72,6 @@ footer .redes{
 margin-top: 20px;
 text-align: center;
 font-size: 40px;
-/* padding: 20px; */
 }
 
 footer a{
@@ -80,7 +79,7 @@ footer a{
 }
 
 ::-webkit-scrollbar{
-    background-color:  springgreen;
+    background-color:  tomato;
 }
 
 ::-webkit-scrollbar-thumb{
