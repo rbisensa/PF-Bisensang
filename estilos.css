@@ -93,6 +93,7 @@ h2 {
 }
 
 .nright {
+  background-image: linear-gradient(to right, white, springgreen);
   width: 100%;
   padding: 20px;
 }
@@ -105,7 +106,7 @@ h2 {
 }
 
 .galeria {
-  background-color: #333;
+  background-image: linear-gradient(to left, white, springgreen);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, 200px);
@@ -177,7 +178,7 @@ footer a {
 }
 
 .subir {
-  background-color: orangered;
+  background-color: tomato;
   color: white;
   height: 40px;
   width: 40px;
@@ -201,7 +202,7 @@ footer a {
   bottom: 100px;
   text-align: center;
   line-height: 40px;
-  border: 3px solid #333;
+  border: 3px solid white;
   border-radius: 50%;
 }
 
