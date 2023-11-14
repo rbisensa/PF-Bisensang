@@ -18,7 +18,7 @@
   transform: scale(1.15) !important;
   background-color: red;
   font-weight: bolder;
-  /* background-color: white; */
+  /* background-color: $color4; */
   /* position: fixed; */
 }
 

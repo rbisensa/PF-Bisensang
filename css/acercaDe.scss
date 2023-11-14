@@ -1,3 +1,13 @@
+//paleta de colores
+$color1: tomato;
+$color2: red;
+$color3: springgreen;
+$color4: white;
+$color5: #333;
+$color6: black;
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,19 +15,19 @@
 }
 
 .navbar{
-    background-color: tomato;
+    background-color: $color1;
 }
 
 .nav-link{
-    color: white !important;
+    color: $color4 !important;
     padding-left: 20px !important;
 }
 
 .nav-link:hover{
     transform: scale(1.15) !important;
-    background-color: red;
+    background-color: $color2;
     font-weight: bolder;
-    /* background-color: white; */
+    /* background-color: $color4; */
     /* position: fixed; */
 }
 
@@ -29,16 +39,16 @@
 }
 
 .container{
-    background-image: linear-gradient(to right, white, aqua);
+    background-image: linear-gradient(to right, $color4, aqua);
 }
 
 .barra a{
-    color: white;
+    color: $color4;
     text-decoration: none;
 }
 
 footer{
-    background-color: tomato;
+    background-color: $color1;
     padding: 20px;
 }
 
@@ -50,22 +60,22 @@ font-size: 40px;
 }
 
 footer a{
-    color: white;
+    color: $color4;
 }
 
 ::-webkit-scrollbar{
-    background-color:  tomato;
+    background-color:  $color1;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: white;
+    background-color: $color4;
     border-radius: 10px;
-    box-shadow: inset 0 0 2px #333;
+    box-shadow: inset 0 0 2px $color5;
 }    
 
 .subir{
-    background-color: tomato;
-    color: white;
+    background-color: $color1;
+    color: $color4;
     height: 40px;
     width: 40px;
     position: fixed;
@@ -74,13 +84,13 @@ footer a{
     text-align: center;
     line-height: 40px;
     font-size: 30px;
-    border: 3px solid white;
+    border: 3px solid $color4;
     border-radius: 50%;
 }
 
 .wsapp{
-    background-color: tomato;
-    color: white;
+    background-color: $color1;
+    color: $color4;
     height: 40px;
     width: 40px;
     position: fixed;
@@ -88,6 +98,6 @@ footer a{
     bottom: 100px;
     text-align: center;
     line-height: 40px;
-    border: 3px solid white;
+    border: 3px solid $color4;
     border-radius: 50%;
 }

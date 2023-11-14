@@ -5,7 +5,7 @@
 }
 
 .navbar{
-    background-color: springgreen;
+    background-color: tomato;
 }
 
 .nav-link{
@@ -15,7 +15,7 @@
 
 .nav-link:hover{
     transform: scale(1.15) !important;
-    background-color: rgba(11, 248, 11, 0.801);
+    background-color: red;
     font-weight: bolder;
 }
 
@@ -23,12 +23,116 @@
     transform: scale(1.15) !important;
 }
 
-.jumbotron{
-    background-image: url(img/exteriores\ 3.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;   
+
+// mixins de filtros
+
+@mixin grayscale{
+    filter: grayscale(100%);
 }
+
+@mixin sepia{
+    filter: sepia(100%);
+}
+
+@mixin hue-rotate($grados){
+    filter:hue-rotate($grados);
+}
+
+// galeria de imagenes con @for
+
+h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 1px black;;
+    padding: 20px;
+    background-color: springgreen
+}
+
+.contenedor{
+    background-image: linear-gradient(springgreen, white, springgreen) ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 200px);
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+.item{
+    border: 2px solid tomato;
+    background-image: url(img2/Img1.jpg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.9s;
+}
+.item:hover{
+    transition: all 0.9s;
+    background-size: 125%;
+}
+
+$micolor1: rgb(3, 56, 5);
+$micolor2: rgb(6, 20, 50);
+$micolor3: rgb(12, 6, 0);
+
+@for $i from 1 through 3 {
+    .item#{$i} {
+        background-color: lighten($micolor1, $i * 10%);
+        background-image: url(img2/Img#{$i}.jpg);
+        // @include grayscale()
+    }
+}
+
+@for $i from 4 through 6 {
+    .item#{$i} {
+        background-color: lighten($micolor2, $i * 10%);
+        background-image: url(img2/Img#{$i}.jpg);
+        // @include sepia()
+    }
+}
+
+@for $i from 7 through 9 {
+    .item#{$i} {
+        background-color: lighten($micolor3, $i * 7%);
+        background-image: url(img2/Img#{$i}.jpg);
+        // @include hue-rotate(20deg);
+    }
+}
+
+// lista con @for
+
+$micolor4: rgb(170, 255, 0);
+
+.contenedor2{
+    width: 80%;
+    min-height: 600px;
+    background-image: linear-gradient(to right, white, springgreen, white);
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.caja{
+    //height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50px;
+    border: 3px solid tomato;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: auto;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #000;
+    color: #fff;
+}
+
+@for $i from 1 through 6 {
+    .caja#{$i} {
+        background-color: lighten(red, $i * 3%);
+    }
+    
+}
+
 
 .barra a{
     color: white;
@@ -60,3 +164,146 @@ footer a{
     border-radius: 10px;
     box-shadow: inset 0 0 2px #333;
 }    
+
+.subir{
+    background-color: tomato;
+    color: white;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.wsapp{
+    background-color: tomato;
+    color: white;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    text-align: center;
+    line-height: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+
+@media only screen and (min-width:480px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px)
+    }
+    }
+
+@media only screen and (min-width:768px) and (max-width:1024px){     
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item1{
+        grid-column: 1/3 ;
+        grid-row: 1/2 ;
+    }
+    
+    .item2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    
+    .item3{
+        grid-column: 1/2 ;
+        grid-row:2/3;
+    }
+    
+    .item4{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    }
+    
+    .item5{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    .item6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    
+    .item7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .item8{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+
+@media only scren and (min-width:1024px){
+    .contenedor{
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 200px 200px;
+    }
+    }
+
+
+    //grid para contenedor2
+
+    @media only screen and (min-width:480px){
+        .contenedor2{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 200px)
+        }
+    }
+    
+    
+    @media only screen and (min-width:768px) and (max-width:1024px){     
+        .contenedor{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .caja1{
+            grid-column: 1/3 ;
+            grid-row: 1/2 ;
+        }
+        
+        .caja2{
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        
+        .caja3{
+            grid-column: 1/2 ;
+            grid-row:2/3;
+        }
+        
+        .caja4{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        }
+        
+        .caja5{
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+        
+        .caja6{
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+    }
+    
+    @media only scren and (min-width:1024px){
+        .contenedor2{
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: 200px 200px;
+        }
+        }
+    
