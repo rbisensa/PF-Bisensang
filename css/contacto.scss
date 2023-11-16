@@ -29,7 +29,7 @@ $color6: black;
 }
 
 body{
-    background-color: $color5;
+    background-image: linear-gradient($color3, $color4, $color3);
 }
 
 .container-fluid{

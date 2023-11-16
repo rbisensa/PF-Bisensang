@@ -24,12 +24,17 @@
 }
 
 body {
-  background-image: linear-gradient(to right, springgreen, #333);
+  background-image: linear-gradient(springgreen, white, springgreen);
 }
 
 h3 {
-  color: white;
-  font-family: cursive;
+  color: tomato;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 15px;
+}
+
+.container p {
+  color: black;
 }
 
 footer {
@@ -41,7 +46,6 @@ footer .redes {
   margin-top: 20px;
   text-align: center;
   font-size: 40px;
-  /* padding: 20px; */
 }
 
 footer a {

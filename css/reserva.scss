@@ -7,7 +7,6 @@ $color5: #333;
 $color6: black;
 
 
-
 *{
     margin: 0;
     padding: 0;
@@ -30,16 +29,26 @@ $color6: black;
 }
 
 body{
-    background-color: $color5;
+    background-image: linear-gradient($color3, $color4, $color3);
 }
 
 .container-fluid{
     color: $color4;
     width: 100%;
-    background-image: url(../img/pinata-1937444_1280.jpg);
+    background-image: url(../img/niña\ globos.jpg);
     background-size: cover;
     background-position: center;
     height: auto;
+}
+
+h2{
+    text-align: center;
+    color: $color4;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 1px $color6;;
+    padding: 20px;
+    /* border: 3px solid $color5; */
+    background-color: $color1
 }
 
 h3{
@@ -55,6 +64,8 @@ h3{
 
 .checked:checked{
     accent-color: $color2;
+    /* color: $color2; */
+    /* background-color: #ff0; */
 }
 
 .btn-primary{
@@ -62,7 +73,7 @@ margin-bottom: 20px;
 }
 
 .btn-primary:hover{
-background-color: $color2; 
+background-color: $color2 ; 
 }
 
 .barra a{
@@ -75,10 +86,11 @@ footer{
     padding: 20px;
 }
 
-footer .$color2es{
+footer .redes{
 margin-top: 20px;
 text-align: center;
 font-size: 40px;
+/* padding: 20px; */
 }
 
 footer a{

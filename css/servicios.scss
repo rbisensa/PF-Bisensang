@@ -36,12 +36,17 @@ $color6: black;
 }
 
 body{
-    background-image: linear-gradient(to right, $color3, $color5);
+    background-image: linear-gradient($color3, $color4, $color3);;
 }
 
 h3{
-    color: $color4;
-    font-family: cursive;
+    color: $color1;
+    text-shadow: 1px 1px 1px $color6;
+    margin-bottom: 15px;
+}
+
+.container p{
+    color: $color6;
 }
 
 footer{
@@ -53,7 +58,6 @@ footer .redes{
 margin-top: 20px;
 text-align: center;
 font-size: 40px;
-/* padding: 20px; */
 }
 
 footer a{

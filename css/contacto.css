@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: #333;
+  background-image: linear-gradient(springgreen, white, springgreen);
 }
 
 .container-fluid {
